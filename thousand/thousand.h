@@ -26,6 +26,9 @@ std::string rstrip(std::string str, char ch);
 //@parameter limit 要替换的次数，默认为0，表示全部替换
 std::string replace(std::string str, std::string srce, std::string dest, int limit = 0);
 
-
+//判断文件是否存在
+//@parameter path 文件路径
+//存在返回true，不存在返回false
+bool IfPathExists(std::string path);
 
 #endif

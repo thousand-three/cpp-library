@@ -90,3 +90,15 @@ std::string replace(std::string str, std::string srce, std::string dest, int lim
     }
     return str;
 }
+
+bool IfPathExists(std::string path)
+{
+    std::FILE *file = fopen(path.c_str(), "r");
+    if (file)
+    {
+        fclose(file);
+        return true;
+    }
+    else
+        return false;
+}
